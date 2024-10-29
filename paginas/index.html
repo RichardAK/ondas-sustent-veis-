@@ -1,55 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="inicio.css">
     <title>Inicio</title>
 </head>
+
 <body>
     <header>
-        <img src="img/Logo.png" alt="Logo">
-        <nav>
-            <a href="Cidades.html">Cidades</a>
-            <a href="#entrevistas">Entrevistas</a>
-            <a href="sobrenos.html">Sobre nós</a>
+        <img id="logo" src="img/Logo.png" alt="Logo">
+        <nav id="nav">
+        
+            <button id="btn-mobile">menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu">
+                <li> <a href="Cidades.html">Cidades</a></li>
+                <li> <a href="#entrevistas">Entrevistas</a></li>
+                <li> <a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
         </nav>
+
+
     </header>
 
-    <section>
-        <div>
+    <section class="noticias">
+
+        <div class="item-noticias" id="item1">
             <img src="img/noticias/Poluiçãopraia.jpg" alt="Lixo na praia">
             <p>Poluição nas praias</p>
         </div>
 
-        <div>""
+        <div class="item-noticias">
             <img src="img/noticias/praiacheia.jpg" alt="praia cheia">
             <p>Alta temporada</p>
         </div>
 
-        <div>
+        <div class="item-noticias">
             <img src="img/noticias/pinguimnapraia.jpg" alt="">
             <p>Pinguim encontrado na praia</p>
         </div>
-    </section>
 
+    </section>
+    
+    <h1 id="titulo-entrevista">Entrevistas</h1>
+    
     <section id="entrevistas">
-        <h1>Entrevistas</h1>
-        
-        <div>
+
+        <div class="item-entrevistas">
             <a href="EntrevistaIT.html">
                 <img src="img/entrevistados/2entrevistaIT.jpg" alt="">
                 <p>Rodrigo Zanella(Itanháem)</p>
-            </a>    
+            </a>
         </div>
-        
-        <div>
+
+        <div class="item-entrevistas">
             <a href="EntrevitaSV.html">
                 <img src="img/cidades/Saovicente.jpg" alt="">
                 <p>Tomaz(São Vicente)</p>
-            </a>    
+            </a>
         </div>
-        
+
     </section>
-    
+
+
+    <script type="text/javascript" src="inicio.js"></script>
+
 </body>
+
 </html>
