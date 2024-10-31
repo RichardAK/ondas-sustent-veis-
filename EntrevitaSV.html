@@ -4,27 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="entrevista.css">
+    <title>Entrevista</title>
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img src="img/Logo.png" alt="Logo">
+            <img id="logo" src="img/Logo.png" alt="Logo">
         </a>
-        <nav>
-            <a href="Cidades.html">Cidades</a>
-            <a href="">Entrevistas</a>
-            <a href="sobrenos.html">Sobre nós</a>
+
+        <nav id="nav">
+
+            <button id="btn-mobile">menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu">
+                <li> <a href="Cidades.html">Cidades</a></li>
+                <li> <a href="#Veja-tambem">Entrevistas</a></li>
+                <li> <a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
         </nav>
     </header>
 
     <section>
         <h1>Entrevista – Diretor de planejamento turístico</h1>
 
-        <section>
-            <ol>
-                <li>
+        <section id="entrevista">
+            <ol id="texto-entrevista">
+                <li class="titulo-entrevista">
                     Quais são os principais tipos de poluição que afetam as praias do município atualmente e como eles
                     impactam o ecossistema local?
                     <ul>
@@ -37,7 +45,7 @@
                 </li>
 
 
-                <li>
+                <li class="titulo-entrevista">
                     Que medidas estão sendo tomadas para reduzir a poluição das praias?
                     <ul>
                         <li>"A conscientização e sensibilização por intermédio da educação ambiental; busca de recursos
@@ -48,7 +56,7 @@
                     </ul>
                 </li>
 
-                <li>
+                <li class="titulo-entrevista">
                     Existe algum plano de gestão ou programa específico para a limpeza e conservação das praias?
                     <ul>
                         <li>"Existe programa de zeladoria e limpeza da orla e da faixa de areia da praia e o programa de
@@ -57,7 +65,7 @@
                     </ul>
                 </li>
 
-                <li>
+                <li class="titulo-entrevista">
                     Como é feito o monitoramento da qualidade da água e da areia das praias?
                     <ul>
                         <li>"Para controle da qualidade da água existe o monitoramento da CETESB que é órgão Estadual e
@@ -68,7 +76,7 @@
                     </ul>
                 </li>
 
-                <li>
+                <li class="titulo-entrevista">
                     Quais são os principais desafios enfrentados pela administração municipal para controlar a poluição
                     das praias?
                     <ul>
@@ -78,7 +86,7 @@
                     </ul>
                 </li>
 
-                <li>
+                <li class="titulo-entrevista">
                     Há parcerias com ONGs, empresas ou outras instituições para combater a poluição? Se sim, como
                     essas parcerias funcionam?
                     <ul>
@@ -91,7 +99,7 @@
                 </li>
 
 
-                <li>
+                <li class="titulo-entrevista">
                     Que papel a educação e a conscientização da população têm na sua estratégia de combate à
                     poluição?
                     <ul>
@@ -105,7 +113,7 @@
                     </ul>
                 </li>
 
-                <li>
+                <li class="titulo-entrevista">
                     Como são identificadas e geridas as principais fontes de poluição, como esgoto, lixo e produtos
                     químicos, especificamente nas praias do município?
                     <ul>
@@ -117,7 +125,7 @@
                     </ul>
                 </li>
 
-                <li>
+                <li class="titulo-entrevista">
                     Há algum incentivo ou política para promover práticas sustentáveis entre os moradores e visitantes
                     das praias?
                     <ul>
@@ -129,7 +137,7 @@
                     </ul>
                 </li>
 
-                <li>
+                <li class="titulo-entrevista">
                     Quais são os planos futuros ou projetos em desenvolvimento para melhorar a situação das praias
                     em relação à poluição?
                     <ul>
@@ -144,32 +152,42 @@
                 </li>
             </ol>
 
-            <img src="" alt="">
+            <img src="img/cidades/Saovicente2.jpg" alt="">
 
         </section>
 
+    </section>
 
 
+    <h2 id="titulo-extras">Veja tambem</h2>
 
+    <article id="Veja-tambem">
 
-        <article>
-            <h2>Veja tambem</h2>
-
+        <div class="item">
             <a href="">
                 <img src="img/noticias/Poluiçãopraia.jpg" alt="">
                 <p>Poluição nas praias</p>
             </a>
+        </div>
 
+        <div class="item">
             <a href="">
                 <img src="img/noticias/praiacheia.jpg" alt="">
                 <p>Alta temporada</p>
             </a>
+        </div>
 
+        <div class="item">
             <a href="EntrevistaIT.html">
                 <img src="img/entrevistados/2entrevistaIT.jpg" alt="">
                 <p>Rodrigo Zanella(Itanháem)</p>
             </a>
-        </article>
+        </div>
+
+    </article>
+
+
+    <script type="text/javascript" src="menu.js"></script>
 </body>
 
 </html>
