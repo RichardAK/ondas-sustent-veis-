@@ -1,44 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sobrenos.css">
     <title>Sobre nós</title>
 </head>
+
 <body>
     <header>
         <a href="index.html">
-            <img src="img/Logo.png" alt="Logo">
+            <img id="logo" src="img/Logo.png" alt="Logo">
         </a>
-        <nav>
-            <a href="Cidades.html">Cidades</a>
-            <a href="">Entrevistas</a>
-            <a href="sobrenos.html">Sobre nós</a>
+
+        <nav id="nav">
+
+            <button id="btn-mobile">menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu">
+                <li> <a href="Cidades.html">Cidades</a></li>
+                <li> <a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
         </nav>
     </header>
 
-    <section>
-        <h1>Sobre nós</h1>
+    <h1>Sobre nós</h1>
 
-        <p>O grupo é formado por cinco integrantes, Anna, Elaine, Nicolly, Pablo e Tainá, o conceito do site “Ondas sustentáveis” surgir a partir do projeto piloto do podcast com o mesmo nome, com a intenção de expandir e trazer um espaço interativo, onde os usuários pudessem explorar materiais educativos e participar de discussões, conscientizando e promovendo ações de preservação ambiental em todo litoral sul paulista, com objetivo de engajar tanto moradores quanto turistas em práticas de turismo sustentável e na preservação dos ecossistemas costeiros dessa região.</p>
+    <section class="sobrenos">
 
-        <img src="" alt="">
+        <img src="img/sobrenos.jpg" alt="">
+
+        <p id="sobre">O grupo é formado por cinco integrantes, Anna, Elaine, Nicolly, Pablo e Tainá, o conceito do site
+            “Ondas sustentáveis” surgir a partir do projeto piloto do podcast com o mesmo nome, com a intenção de
+            expandir e trazer um espaço interativo, onde os usuários pudessem explorar materiais educativos e participar
+            de discussões, conscientizando e promovendo ações de preservação ambiental em todo litoral sul paulista, com
+            objetivo de engajar tanto moradores quanto turistas em práticas de turismo sustentável e na preservação dos
+            ecossistemas costeiros dessa região.</p>
+
     </section>
 
     <section>
-        <h3>Missão</h3>
-        <p>Aumentar a conscientização sobre os impactos ambientais no litoral paulista, promovendo ações concretas de preservação ambiental e incentivando práticas de turismo sustentável, tanto para moradores quanto para turistas .</p>
 
-        <h3>Visão</h3>
-        <p>Tornar-se uma referência em sustentabilidade no litoral paulista, sendo um elo entre as belezas naturais da região e as práticas necessárias para sua preservação a longo prazo.</p>
+        <!-- <div class="icon">
+        <img src="img/mvv/missao.png" alt="">
+        <img src="img/mvv/olho.png" alt="">
+        <img src="img/mvv/valor.png" alt="">
+        </div> -->
 
-        <h3>Valores</h3>
-        <ul>
-            <li>Sustentabilidade: Promover práticas que garantam a preservação dos ecossistemas costeiros.</li>
-            <li>Educação Ambiental: Divulgar informações e incentivar a conscientização sobre a importância da preservação.</li>
-            <li>Engajamento Comunitário: Mobilizar moradores e turistas a adotarem práticas sustentáveis.</li>
-            <li>inovação: Utilizar plataformas digitais para maximizar o alcance e a interatividade com o público.</li>
-        </ul>
+        <div class="mvv">
+
+            <div class="text-mvv">
+                <img src="img/mvv/missao.png" alt="">
+                <h3 class="titulo-mvv" id="titulo-missao">Missão</h3>
+                <p class="texto">Aumentar a conscientização sobre os impactos ambientais no litoral paulista, promovendo
+                    ações concretas de preservação ambiental e incentivando práticas de turismo sustentável, tanto para
+                    moradores quanto para turistas.</p>
+            </div>
+
+
+            <div class="text-mvv">
+                <img src="img/mvv/olho.png" alt="">
+                <h3 class="titulo-mvv">Visão</h3>
+                <p class="texto">Tornar-se uma referência em sustentabilidade no litoral paulista, sendo um elo entre as
+                    belezas naturais da região e as práticas necessárias para sua preservação a longo prazo.</p>
+            </div>
+
+            <div class="text-mvv">
+                <img src="img/mvv/valor.png" alt="">
+                <h3 class="titulo-mvv">Valores</h3>
+                <p id="valores">
+                    <strong>Sustentabilidade:</strong> Promover práticas que garantam a preservação dos ecossistemas
+                    costeiros. <br>
+                    <strong>Educação Ambiental:</strong> Divulgar informações e incentivar a conscientização sobre a
+                    importância da preservação. <br>
+                    <strong>Engajamento Comunitário:</strong> Mobilizar moradores e turistas a adotarem práticas
+                    sustentáveis. <br>
+                    <strong>inovação:</strong> Utilizar plataformas digitais para maximizar o alcance e a interatividade
+                    com o público.
+                </p>
+            </div>
+
+        </div>
+
     </section>
+
+    <script type="text/javascript" src="menu.js"></script>
 </body>
+
 </html>
