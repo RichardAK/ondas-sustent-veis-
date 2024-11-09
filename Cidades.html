@@ -1,35 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cidades.css">
     <title>Cidades</title>
 </head>
+
 <body>
     <header>
-        <a href="index.html">
-            <img src="img/Logo.png" alt="Logo">
-        </a>
-        <nav>
-            <a href="Cidades.html">Cidades</a>
-            <a href="">Entrevistas</a>
-            <a href="sobrenos.html">Sobre nós</a>
-        </nav>
+        <img id="logo" src="img/Logo.png" alt="Logo">
+        <nav id="nav">
+
+            <button id="btn-mobile">menu
+                <span id="hamburger"></span>
+            </button>
+            <ul id="menu">
+                <li> <a href="Cidades.html">Cidades</a></li>
+                <li> <a href="#entrevistas">Entrevistas</a></li>
+                <li> <a href="sobrenos.html">Sobre nós</a></li>
+            </ul>
     </header>
 
     <section>
-        <img src="" alt="">
 
-        <form action="">
-            <select name="cidades" id="cidades">
-                <option value="">Escolha uma cidade...</option>
-                <option value="itanhaem">Itanhaém</option>
-                <option value="mongagua">Mongaguá</option>
-                <option value="sao-vicente">São Vicente</option>
-            </select>
+        <h1>Escolha a cidade</h1>
 
-            <button><img src="img/busca.png" alt=""></button>
-        </form>
+        <div id="select">
+
+        <select id="cidade-select">
+            <option value="">Selecione uma cidade</option>
+            <option value="cidade1">Itanháem</option>
+            <option value="cidade2">Mongaguá</option>
+            <option value="cidade3">São Vicente</option>
+        </select>
+
+        </div>
+
+        <div id="cidade-info">
+            <p id="cidade-texto"></p>
+            <img id="cidade-imagem" src="" alt="">
+        </div>
+        
     </section>
+
+    <script type="text/javascript" src="menu.js"></script>
+    <script type="text/javascript" src="cidade.js"></script>
 </body>
+
 </html>
